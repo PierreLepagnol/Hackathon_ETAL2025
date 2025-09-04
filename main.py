@@ -256,4 +256,4 @@ with gr.Blocks(
 
 
 if __name__ == "__main__":
-    demo.launch(allowed_paths=[str(Path.cwd() / "assets")])
+    demo.launch(share=True, allowed_paths=[str(Path.cwd() / "assets")])
