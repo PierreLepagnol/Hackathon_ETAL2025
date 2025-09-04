@@ -92,7 +92,7 @@ with gr.Blocks(
     """,
 ) as demo:
     gr.Markdown(
-        f'''<h2 id="title"><img src="{ICON}" alt="Bretagne"> BrezhonRAG</h2> by SKIP<u>AI</u>LH'''
+        f'''<h2 id="title"><img src="{ICON}" alt="Bretagne"> Skoazell slide (BrezhonRAG)</h2> by SKIP<u>AI</u>LH'''
     )
     gr.Markdown(
         f'''

@@ -4,11 +4,9 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 
 ## Motivation:
 
-
-
 - Aide à l'enseignement d'une langue sous-dotée, selon ELG dasboard; 04/09/2025 : ![graph](./assets/myimage.png)
 
-- Augmenter le corpus disponible par récupération de texte de qualité 
+- Augmenter le corpus disponible par récupération de texte de qualité
 - Faciliter les contributions Wikipédia en breton
 - Faire un essai pilote avec Mistral medium (finalement pas [Apertus 8B](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509) "1811 natively supported languages")
 
@@ -30,7 +28,7 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 ### Roadmap (Futures perspectives - Fonctionalités)
 
 - Enrichir wikipedia avec un humain dans la boucle:
-    - RI dans d'autres langues, avec un output trad à corriger (?) en syntaxe wiki pour produire des données pour enrichir les corpus. ("Da betra 'servij an tiegezh Abri du marin ?" 'A quoi ça sert un [Abri du marin](https://fr.wikipedia.org/wiki/Abri_du_marin) ?'). 
+    - RI dans d'autres langues, avec un output trad à corriger (?) en syntaxe wiki pour produire des données pour enrichir les corpus. ("Da betra 'servij an tiegezh Abri du marin ?" 'A quoi ça sert un [Abri du marin](https://fr.wikipedia.org/wiki/Abri_du_marin) ?').
 - Filtration
 - Slides données par qqn d'autres
 - Templating des slides:
