@@ -9,7 +9,7 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 
 
 
-- Aide à l'enseignement d'une langue sous-dotée ![graph généré sur ELG dasboard; 04/09/2025](./assets/myimage.png)
+- Aide à l'enseignement d'une langue sous-dotée, selon ELG dasboard; 04/09/2025 : ![graph](./assets/myimage.png)
 
 - Augmenter le corpus disponible par récupération de texte de qualité (avec consentement explicite)
 - Faciliter les contributions Wikipédia en breton
