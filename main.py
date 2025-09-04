@@ -21,13 +21,12 @@ def _build_payload(themes: List[str]) -> List[Dict[str, Any]]:
     results: List[Dict[str, Any]] = []
     for theme in themes:
         content: str = get_page(theme, is_only_summary=True)
+        slides = generate_slides_for_theme(content.encode("utf-8").decode("utf-8"))
+        print(slides)
         results.append(
             {
                 "theme": theme,
-                "status": "ok",
-                "slides": generate_slides_for_theme(
-                    content.encode("utf-8").decode("utf-8")
-                ),
+                "slides": slides,
             }
         )
     return results
@@ -40,23 +39,28 @@ def _to_markdown(items: List[Dict[str, Any]]) -> str:
     lines: List[str] = []
     for i, item in enumerate(items, start=1):
         theme = item.get("theme", f"Thème {i}")
-        lines.append(f"# {theme}")
+        slides_raw = item.get("slides", "")
+        # # Parse content inside ```markdown {CONTENT}```
+        # if "```markdown" in slides_raw:
+        #     start_marker = "```markdown"
+        #     end_marker = "```"
+        #     start_idx = slides_raw.find(start_marker)
+        #     if start_idx != -1:
+        #         start_idx += len(start_marker)
+        #         end_idx = slides_raw.find(end_marker, start_idx)
+        #         if end_idx != -1:
+        #             slides = slides_raw[start_idx:end_idx].strip()
+        #         else:
+        #             slides = slides_raw[start_idx:].strip()
+        #     else:
+        #         slides = slides_raw
+        # else:
+        #     slides = slides_raw
+
+        lines.append(f"## {theme}")
         lines.append("")
-        lines.append(f"- Status: {item.get('status', 'ok')}")
-        lines.append(f"- Summary: {item.get('summary', '')}")
+        lines.append(str())
         lines.append("")
-        lines.append("## RI")
-        lines.append(str(item.get("ri", "")))
-        lines.append("")
-        lines.append("## Slides")
-        lines.append(str(item.get("slides", "")))
-        lines.append("")
-        sections = item.get("suggested_sections") or []
-        if sections:
-            lines.append("## Sections suggérées")
-            for s in sections:
-                lines.append(f"- {s}")
-            lines.append("")
         # Separator between themes
         lines.append("---")
         lines.append("")
