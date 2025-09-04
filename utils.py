@@ -39,3 +39,24 @@ def compile_pandoc_beamer(md: str) -> str:
     ]
     subprocess.run(cmd, check=True)
     return str(out)
+
+
+def compile_marp(md: str) -> str:
+    out = _pdf_out(md, "marp")
+    if out.exists():
+        return str(out)
+    src = CACHE / f"{_hid(md)}.md"
+    src.write_text(md, encoding="utf-8")
+    # Requires Node + marp CLI (pulled via npx if not installed):
+    cmd = [
+        "npx",
+        "-y",
+        "@marp-team/marp-cli",
+        "--pdf",
+        "--allow-local-files",
+        str(src),
+        "-o",
+        str(out),
+    ]
+    subprocess.run(cmd, check=True)
+    return str(out)

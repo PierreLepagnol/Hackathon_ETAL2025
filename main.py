@@ -5,7 +5,7 @@ from pathlib import Path
 
 import gradio as gr
 from gradio_pdf import PDF
-from utils import compile_pandoc_beamer
+from utils import compile_marp
 from bretonwiki import get_page
 from llms import generate_slides_for_theme
 
@@ -20,7 +20,7 @@ def _build_payload(themes: List[str]) -> List[Dict[str, Any]]:
     themes = [t.strip() for t in themes if (t or "").strip()]
     results: List[Dict[str, Any]] = []
     for theme in themes:
-        content: str = get_page(theme, is_only_summary=True)
+        content: str = get_page(theme, is_only_summary=False)
         slides = generate_slides_for_theme(content.encode("utf-8").decode("utf-8"))
         print(slides)
         results.append(
@@ -78,7 +78,7 @@ def get_image_as_base64(image_path: str) -> str:
 
 
 def build(md: str):
-    pdf = compile_pandoc_beamer(md)
+    pdf = compile_marp(md)
     return pdf, pdf  # (viewer path, download path)
 
 
@@ -103,7 +103,7 @@ with gr.Blocks(
     )
 
     with gr.Row():
-        with gr.Column(scale=3):
+        with gr.Column():
             MAX_ITEMS = 10
             themes_count = gr.State(1)
             theme_inputs = [
@@ -122,22 +122,22 @@ with gr.Blocks(
             with gr.Row():
                 submit_btn = gr.Button("Générer les diapositives")
 
-        with gr.Column(scale=1):
-            json_in = gr.File(
-                label="Importer des diapositives",
-                file_types=[".json"],
-                interactive=True,
-            )
+        # with gr.Column(scale=1):
+        #     json_in = gr.File(
+        #         label="Importer des diapositives",
+        #         file_types=[".json"],
+        #         interactive=True,
+        #     )
     with gr.Row():
-        with gr.Column():
+        with gr.Column(scale=1):
             out_md = gr.Textbox(
                 label="Résultat (Markdown éditable)",
                 lines=22,
                 interactive=True,
                 show_copy_button=True,
             )
-        with gr.Column():
-            viewer = PDF(label="Slides Preview", height=500)  # inline pdf.js viewer
+        with gr.Column(scale=2):
+            viewer = PDF(label="Slides Preview", min_width=500, height=500)
             dl = gr.DownloadButton("Télécharger les diapositives", interactive=False)
             gen_btn = gr.Button("Générer les diapositives", interactive=False)
             gen_btn.click(build, inputs=[out_md], outputs=[viewer, dl])
