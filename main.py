@@ -7,10 +7,7 @@ import gradio as gr
 from gradio_pdf import PDF
 from utils import compile_pandoc_beamer
 from bretonwiki import get_page
-
-
-def generate_slides_for_theme(theme: str) -> str:
-    return f"## Slides for {theme}"  # TODO: Implement this
+from llms import generate_slides_for_theme
 
 
 def _build_payload(themes: List[str]) -> List[Dict[str, Any]]:

@@ -8,6 +8,8 @@ dependencies = [
     "gradio>=5.44.1",
     "gradio-pdf>=0.0.22",
     "markdown>=3.8.2",
+    "mistralai>=1.9.10",
+    "python-dotenv>=1.1.1",
     "wikipedia>=1.4.0",
     "wikipedia-api>=0.8.1",
 ]
