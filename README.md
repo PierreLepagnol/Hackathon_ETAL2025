@@ -14,7 +14,7 @@ Motivation:
 ### Déontologie (D'abord ne pas nuire)
 - Désirabilité des outils numériques établie (Plan de réappropriation des langues de Bretagne 2024-2027; avalisé par le Conseil culturel de Bretagne; 2 décembre 2023)
 - Pas de pollution linguistique: l'outil s'adresse explicitement aux enseignant.es brittophones 
-- N'aura pas d'empreinte sur le financement public: hors circuit de financement Région, Département
+- Pas de concurrence avec nos utilisateurs: hors circuit de financement public (Région, Département)
 - Soutien dev, promotion sociale et maintien pressenti > fond de dotation Breizh Niverel, dans le cadre de leur réponse BPI France
   
 ### Explication du système (Comment ça marche ?)
