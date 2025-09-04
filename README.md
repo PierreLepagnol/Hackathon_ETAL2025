@@ -13,13 +13,14 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 
 - Augmenter le corpus disponible par récupération de texte de qualité (avec consentement explicite)
 - Faciliter les contributions Wikipédia en breton
+- Faire un essai pilote avec un nouveau modèle multilingue ([Apertus 8B](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509))
 
 ### Déontologie (D'abord ne pas nuire)
-- Désirabilité des outils numériques établie (Plan de réappropriation des langues de Bretagne 2024-2027; avalisé par le Conseil culturel de Bretagne; 2 décembre 2023)
+- Désirabilité des outils numériques établie ([Plan de réappropriation des langues de Bretagne 2024-2027](https://kevrebreizh.bzh/wp-content/FileManager/_DocsPublics/Conventions%20et%20textes%20officiels/Rannvro%20Breizh%20-%20R%C3%A9jion%20Bert%C3%A8gne%20-%20R%C3%A9gion%20Bretagne/Convention%20Langues%20de%20Bretagne/Plan_reappropriation_Langues_bzh.pdf); avalisé par le [Conseil culturel de Bretagne; 2 décembre 2023](https://www.bretagne.bzh/app/uploads/CONSEIL_CULTUREL_Avis_langues_2023_12_02.pdf))
 - Réduction d'écart numérique entre langues en bilinguisme (présupposé d'acculturation à l'outil > bas impact sur les usages culturels)
-- Pas de pollution linguistique: l'outil s'adresse explicitement aux enseignant.es brittophones
-- Pas de concurrence avec nos utilisateurs: hors circuit de financement public (Région, Département)
-- Soutien dev, promotion sociale et maintien pressenti > fond de dotation Breizh Niverel, dans le cadre de leur réponse BPI France
+- Pas de pollution linguistique: l'outil s'adresse explicitement en breton aux enseignant.es brittophones
+- Pas de concurrence financière avec nos utilisateurs: hors circuit de financement public (Région, Département)
+- Soutien dev, promotion sociale et maintien pressenti > fond de dotation Breizh Niverel, dans le cadre de [leur campagne de contributions wiki](https://bretagnenumerique.bzh/projets/wikipedia/)
 
 ### Explication du système (Comment ça marche ?)
 
