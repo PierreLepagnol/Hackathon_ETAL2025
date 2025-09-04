@@ -1,5 +1,5 @@
 # Hackathon
-SkipAIlh propose "skoazell slide"
+SkipAIlh propose "Skoazell slide"
 Moteur de création de matériel pédagogique (diapos) dans une langue sous-dotée (breton).
 
 ## Motivation:
