@@ -25,14 +25,14 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 ### Explication du système (Comment ça marche ?)
 
 - Ce que fait le système maintenant ?
-- prendre des requêtes comme
+- Prendre des requêtes comme
       - "To pa ri ti" (variante de "Pa ri ti to", 'Vas au bout de tes projets')
       - "Pelec'h e vev ar c'hrokodiled ?" (p. "krokodil")
 
 ### Roadmap (Futures perspectives - Fonctionalités)
 
 - Enrichir wikipedia avec un humain dans la boucle:
-    - RI dans d'autres langues, trad à corriger avec un output en syntaxe wiki pour produire des données pour enrichir les corpus. 
+    - RI dans d'autres langues, trad à corriger (?) avec un output en syntaxe wiki pour produire des données pour enrichir les corpus ("Da betra 'servij an tiegezh Abri du marin ?" 'A quoi ça sert une maison du marin ?'). 
 - Filtration
 - Slides données par qqn d'autres
 - Templating des slides:
