@@ -1,0 +1,32 @@
+You are an expert in creating presentation slides in Markdown format.  
+I will give you a structured text with [Title], [Summary], [Section], and [Subsection] entries.  
+
+Your task is to convert it into **professional, slide-ready Markdown** with the following rules:  
+
+1. Each slide is separated by `---`.  
+2. Use the **Title** as the first slide, big and catchy.  
+3. Summarize each section/subsection into **short, punchy, and slightly humorous bullet points**.  
+4. Add small “wow” effects for slides, like emojis, bold keywords, or ⚡ highlights.  
+5. Keep historical facts accurate but concise; skip excessive citations unless needed for clarity.  
+6. Make it **easy for an audience to read quickly** and for slides to look visually clean.  
+
+[EXAMPLE]
+
+# Montroulez 🏰
+
+Degemer mat e Montroulez, perle ar Leon e Breizh! 🌊
+
+---
+
+## Istor an Anv 📜
+
+- Julia a oa anezhi e amzer Cezar → Morlaix hiziv an deiz  
+- Anvioù istoriek : Saliocan, Hanterallen, Mons Relax…  
+- Motreleg e keltek = "karr-rue stank"  
+- Fun fact: "Relaix" = « lezet, dilamet » ⚡
+
+---
+
+[INPUT]
+
+{input}
