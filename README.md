@@ -32,7 +32,7 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 ### Roadmap (Futures perspectives - Fonctionalités)
 
 - Enrichir wikipedia avec un humain dans la boucle:
-    - RI dans d'autres langues, trad à corriger (?) avec un output en syntaxe wiki pour produire des données pour enrichir les corpus ("Da betra 'servij an tiegezh Abri du marin ?" 'A quoi ça sert une maison du marin ?'). 
+    - RI dans d'autres langues, avec un output trad à corriger (?) en syntaxe wiki pour produire des données pour enrichir les corpus. ("Da betra 'servij an tiegezh Abri du marin ?" 'A quoi ça sert un [Abri du marin](https://fr.wikipedia.org/wiki/Abri_du_marin) ?'). 
 - Filtration
 - Slides données par qqn d'autres
 - Templating des slides:
