@@ -8,4 +8,6 @@ dependencies = [
     "gradio>=5.44.1",
     "gradio-pdf>=0.0.22",
     "markdown>=3.8.2",
+    "wikipedia>=1.4.0",
+    "wikipedia-api>=0.8.1",
 ]

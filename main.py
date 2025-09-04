@@ -6,14 +6,11 @@ from pathlib import Path
 import gradio as gr
 from gradio_pdf import PDF
 from utils import compile_pandoc_beamer
+from bretonwiki import get_page
 
 
 def generate_slides_for_theme(theme: str) -> str:
-    return f"Slides for {theme}"  # TODO: Implement this
-
-
-def ri_for_theme(theme: str) -> str:
-    return f"RI for {theme}"  # TODO: Implement this
+    return f"## Slides for {theme}"  # TODO: Implement this
 
 
 def _build_payload(themes: List[str]) -> List[Dict[str, Any]]:
@@ -26,20 +23,14 @@ def _build_payload(themes: List[str]) -> List[Dict[str, Any]]:
     themes = [t.strip() for t in themes if (t or "").strip()]
     results: List[Dict[str, Any]] = []
     for theme in themes:
+        content: str = get_page(theme, is_only_summary=True)
         results.append(
             {
                 "theme": theme,
                 "status": "ok",
-                "summary": f"Drafting outline for '{theme}'",
-                "ri": ri_for_theme(theme),
-                "slides": generate_slides_for_theme(theme),
-                "suggested_sections": [
-                    "Introduction",
-                    "Background & Motivation",
-                    "Key Concepts",
-                    "Case Study",
-                    "Conclusion",
-                ],
+                "slides": generate_slides_for_theme(
+                    content.encode("utf-8").decode("utf-8")
+                ),
             }
         )
     return results

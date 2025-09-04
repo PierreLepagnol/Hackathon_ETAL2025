@@ -24,6 +24,18 @@ def compile_pandoc_beamer(md: str) -> str:
     src = CACHE / f"{_hid(md)}.md"
     src.write_text(md, encoding="utf-8")
     # Choose any Beamer theme; 'metropolis' is popular if installed
-    cmd = ["pandoc", str(src), "-t", "beamer", "-V", "theme:metropolis", "-o", str(out)]
+    cmd = [
+        "pandoc",
+        str(src),
+        "-t",
+        "beamer",
+        "-V",
+        "theme:metropolis",
+        "--pdf-engine=xelatex",
+        "-V",
+        "mainfont:DejaVu Sans",
+        "-o",
+        str(out),
+    ]
     subprocess.run(cmd, check=True)
     return str(out)
