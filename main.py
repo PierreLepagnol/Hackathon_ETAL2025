@@ -40,29 +40,12 @@ def _to_markdown(items: List[Dict[str, Any]]) -> str:
     for i, item in enumerate(items, start=1):
         theme = item.get("theme", f"Thème {i}")
         slides_raw = item.get("slides", "")
-        # # Parse content inside ```markdown {CONTENT}```
-        # if "```markdown" in slides_raw:
-        #     start_marker = "```markdown"
-        #     end_marker = "```"
-        #     start_idx = slides_raw.find(start_marker)
-        #     if start_idx != -1:
-        #         start_idx += len(start_marker)
-        #         end_idx = slides_raw.find(end_marker, start_idx)
-        #         if end_idx != -1:
-        #             slides = slides_raw[start_idx:end_idx].strip()
-        #         else:
-        #             slides = slides_raw[start_idx:].strip()
-        #     else:
-        #         slides = slides_raw
-        # else:
-        #     slides = slides_raw
 
         lines.append(f"## {theme}")
         lines.append("")
-        lines.append(str())
+        lines.append(str(slides_raw))
         lines.append("")
         # Separator between themes
-        lines.append("---")
         lines.append("")
     return "\n".join(lines).strip()
 
