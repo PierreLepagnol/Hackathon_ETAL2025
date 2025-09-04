@@ -26,8 +26,8 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 
 - Ce que fait le système maintenant ?
 - Prendre des requêtes comme
-      - "To pa ri ti" (variante de "Pa ri ti to", 'Vas au bout de tes projets')
-      - "Pelec'h e vev ar c'hrokodiled ?" (p. "krokodil")
+      - "To pa ri ti" (variante de [Pa ri ti to](https://br.wikipedia.org/wiki/To_pa_ri_ti), 'Vas au bout de tes projets')
+      - "Pelec'h e vev ar c'hrokodiled ?" (p. [krokodil](https://br.wikipedia.org/wiki/Krokodil))
 
 ### Roadmap (Futures perspectives - Fonctionalités)
 
