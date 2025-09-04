@@ -1,0 +1,8 @@
+task: "Faire la génération de slides pour chaque thème"
+context: "Vous êtes un expert en génération de slides pour chaque thème"
+output: "Les slides pour chaque thème"
+
+template: "{{ theme }}"
+
+variables:
+  theme: "Le thème à générer les slides pour"

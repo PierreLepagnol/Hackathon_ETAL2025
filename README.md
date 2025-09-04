@@ -17,7 +17,7 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 - Pas de pollution linguistique: l'outil s'adresse explicitement aux enseignant.es brittophones
 - Pas de concurrence avec nos utilisateurs: hors circuit de financement public (Région, Département)
 - Soutien dev, promotion sociale et maintien pressenti > fond de dotation Breizh Niverel, dans le cadre de leur réponse BPI France
-  
+
 ### Explication du système (Comment ça marche ?)
 
 - Ce que fait le système maintenant ?
@@ -30,3 +30,29 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 - Slides données par qqn d'autres
 - Templating des slides:
     - Méta Rêquetes pour faire des slides.
+
+## Lancer l'interface (Gradio)
+
+Prérequis: Python 3.10+.
+
+1. Installer les dépendances: `uv sync`
+2. Démarrer l'app: `uv run main.py`
+3. Ouvrir l'URL locale affichée pour utiliser l'éditeur de diapositives.
+
+Fonctions clés:
+- Panneau gauche: liste des slides, bouton ➕ pour ajouter, bouton «Save All» pour télécharger une archive `.zip` de toutes les diapositives.
+- Panneau droit: champs «Title» et «Content (Markdown)», aperçu en direct, «Save» pour mémoriser la diapositive sélectionnée, «Download» pour exporter la diapositive courante en `.md`.
+
+### Charger des données JSON
+
+Utiliser le champ «Load JSON» pour importer un fichier `.json` au format:
+
+```json
+{"query": "Breizh", "md_text": "## HERE THE MARKDOWN TEXT", "Metadata": {"source": "..."}}
+```
+
+- `query` → titre de la diapositive
+- `md_text` → contenu Markdown
+- `Metadata` (optionnel) est stocké avec la diapositive et inclus dans `slides.json` lors de «Save All».
+
+Le chargeur accepte aussi une liste de tels objets.
