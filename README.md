@@ -11,12 +11,13 @@ Moteur de création de matériel pédagogique (diapos) dans une langue sous-dot�
 
 - Aide à l'enseignement d'une langue sous-dotée, selon ELG dasboard; 04/09/2025 : ![graph](./assets/myimage.png)
 
-- Augmenter le corpus disponible par récupération de texte de qualité (avec consentement explicite)
+- Augmenter le corpus disponible par récupération de texte de qualité 
 - Faciliter les contributions Wikipédia en breton
 - Faire un essai pilote avec un nouveau modèle multilingue (Mistral medium) (et finalement pas [Apertus 8B](https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509)) "1811 natively supported languages"?
 
 ### Déontologie (D'abord ne pas nuire)
 - Désirabilité des outils numériques établie ([Plan de réappropriation des langues de Bretagne 2024-2027](https://kevrebreizh.bzh/wp-content/FileManager/_DocsPublics/Conventions%20et%20textes%20officiels/Rannvro%20Breizh%20-%20R%C3%A9jion%20Bert%C3%A8gne%20-%20R%C3%A9gion%20Bretagne/Convention%20Langues%20de%20Bretagne/Plan_reappropriation_Langues_bzh.pdf); avalisé par le [Conseil culturel de Bretagne; 2 décembre 2023](https://www.bretagne.bzh/app/uploads/CONSEIL_CULTUREL_Avis_langues_2023_12_02.pdf))
+- Entrée avec consentement explicite
 - Réduction d'écart numérique entre langues en bilinguisme (présupposé d'acculturation à l'outil > bas impact sur les usages culturels)
 - Pas de pollution linguistique en breton cassé: l'outil s'adresse explicitement en breton aux enseignant.es brittophones
 - Pas de concurrence financière avec nos utilisateurs: hors circuit de financement public (Région, Département)
