@@ -2,10 +2,7 @@
 SkipAIlh propose "skoazell slide"
 Moteur de création de matériel pédagogique (diapos) dans une langue sous-dotée (breton).
 
-
-## Vendre le système
-
-### Motivation:
+## Motivation:
 
 
 
