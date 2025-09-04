@@ -17,4 +17,9 @@ def generate_slides_for_theme(theme: str) -> str:
         model=MODEL,
         messages=[{"role": "user", "content": prompt}],
     )
-    return chat_response.choices[0].message.content
+    ctx = chat_response.choices[0].message.content
+    slides = ctx.split("<<<START_SLIDES>>>")
+    if len(slides) > 1:
+        return slides[1]
+    else:
+        return ctx

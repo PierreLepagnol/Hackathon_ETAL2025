@@ -8,9 +8,13 @@ Your task is to convert it into **professional, slide-ready Markdown** with the 
 3. Summarize each section/subsection into **short, punchy, and slightly humorous bullet points**.  
 4. Add small “wow” effects for slides, like emojis, bold keywords, or ⚡ highlights.  
 5. Keep historical facts accurate but concise; skip excessive citations unless needed for clarity.  
-6. Make it **easy for an audience to read quickly** and for slides to look visually clean.  
+6. Make it **easy for an audience to read quickly** and for slides to look visually clean.
+
+Start generating slides only after you see the token: <<<START_SLIDES>>>
 
 [EXAMPLE]
+
+ <<<START_SLIDES>>>
 
 # Montroulez 🏰
 
